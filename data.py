@@ -7,10 +7,10 @@ from pathlib import Path
 # from https://adventofcode.com/2022/day/12/input or any input page
 # right click > inspect accessibility properties > network > reload
 # under "file", click "input" request > cookies > copy 'session' id
-id = "53616c7465645f5f0aeeefb39c77e9a10d29c3d1b6cc63e4f846aa1c0f8fffa5034ab3c12ac0522e1f540dc394e379ad5a6a5a91874f0bbaca4eb7699a00b3c6"
+id = "53616c7465645f5fcd5b9a18a69a4ab874f367b422884a975cddb33dac42401df30be8e602ce986d28fe2502209d2d106254b106339e93608711d228ff22176d"
 year = time.strftime("%Y")
 hour = time.strftime("%H")
-day = int(time.strftime("%d"))
+day = int(time.strftime("%d")) + 1
 cmd = f'curl https://adventofcode.com/{year}/day/{day}/input --cookie "session={id}"'
 output = subprocess.check_output(cmd, shell=True)
 output = output.decode("utf-8")
