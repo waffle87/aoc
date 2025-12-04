@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import subprocess
 from datetime import datetime
 from os import getenv
@@ -43,7 +44,9 @@ except subprocess.CalledProcessError as e:
     print(f"error fetching input: {e.stderr.decode('utf-8')}")
     exit(1)
 
-source_file = Path(f"{day}_{year}.py")
+source_dir = Path(f"{year}")
+source_dir.mkdir(exist_ok=True)
+source_file = source_dir / Path(f"{day}_{year}.py")
 if not source_file.exists():
     source_file.touch()
 
