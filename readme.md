@@ -1,6 +1,6 @@
 ## Advent of Code
 
-This repository contains Python solutions for [AoC][https://adventofcode.com] for years 2020 - 2025.
+This repository contains Python solutions for [AoC](https://adventofcode.com) for years 2020 - present.
 
 Run from the top level by specifying the day. Most recent years set the input in the code itself:
 ```
@@ -22,4 +22,4 @@ In Firefox (and probably similarly in mostly other browsers), this cookie can be
 2. Right click -> Accessibility Properties -> Network -> Reload
 3. Click on one of the network requests and under "Cookies" tab on right, copy `session` cookie
 
-This running this script will fetch the input file (timezone agnostically) and open a Python file and the data file in `$EDITOR`.
+Running this script will fetch the input file (timezone agnostically) and open a Python file and the data file in `$EDITOR`.
